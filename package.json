@@ -1,0 +1,62 @@
+{
+  "name": "markdown-join",
+  "version": "0.0.0",
+  "description": "A CLI tool to join Markdown files with custom directives.",
+  "keywords": [
+    "markdown",
+    "cli",
+    "include",
+    "partial",
+    "tool",
+    "join"
+  ],
+  "homepage": "https://github.com/yourname/markdown-join#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourname/markdown-join.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourname/markdown-join/issues"
+  },
+  "license": "MIT",
+  "author": "natumsol <natumsol@gmail.com>",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "markdown-join": "./dist/cli.js",
+    "mdj": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "test": "npx tsx tests/processor.test.ts",
+    "release": "release-it"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.1",
+    "@rslib/core": "^0.11.0",
+    "@types/node": "^22.16.5",
+    "release-it": "^19.0.0",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
