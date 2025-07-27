@@ -10,13 +10,13 @@
     "tool",
     "join"
   ],
-  "homepage": "https://github.com/yourname/markdown-join#readme",
+  "homepage": "https://github.com/natumsol/markdown-join#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourname/markdown-join.git"
+    "url": "https://github.com/natumsol/markdown-join.git"
   },
   "bugs": {
-    "url": "https://github.com/yourname/markdown-join/issues"
+    "url": "https://github.com/natumsol/markdown-join/issues"
   },
   "license": "MIT",
   "author": "natumsol <natumsol@gmail.com>",

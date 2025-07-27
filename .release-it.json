@@ -8,15 +8,14 @@
     "publish": true
   },
   "hooks": {
-    "before:init": ["npm run build", "npm test"]
-  },
-  "changelog": {
-    "enabled": true,
-    "preset": "conventionalcommits"
+    "before:init": [
+      "npm run build",
+      "npm test"
+    ]
   },
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "conventionalcommits"
     }
   }
-} 
+}
